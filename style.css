@@ -122,6 +122,14 @@ body {
 }
 
 
+/* Localiza os botões do painel e força a cor do texto */
+.admin-panel .btn-painel {
+    color: #ffffffd3 !important; /* Branco puro */
+    text-transform: uppercase;   /* Opcional: deixa em caixa alta para destacar */
+    font-weight: bold;           /* Garante que a letra fique grossa */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Sombra leve para dar leitura */
+}
+
 /* 1. Garantindo que TODOS os botões e interativos tenham o cursor de clique */
 .btn-painel, 
 input[type="button"], 
