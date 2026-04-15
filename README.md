@@ -41,8 +41,9 @@ Como o projeto utiliza persistência local e arquivos modulares, a melhor forma 
 ## 📸 Preview
 
 <div align="center">
-  <p><i>![Demonstração do Catálogo](base.png)</i></p>
-  </div>
+  <img src="base.png" alt="Demonstração do Catálogo" width="100%">
+  <p><i>Interface principal do Movie Manager</i></p>
+</div>
 
 ---
 
