@@ -41,7 +41,7 @@ Como o projeto utiliza persistência local e arquivos modulares, a melhor forma 
 ## 📸 Preview
 
 <div align="center">
-  <p><i>Adicione aqui um screenshot ou GIF do seu projeto funcionando!</i></p>
+  <p><i>![Demonstração do Catálogo](base.png)</i></p>
   </div>
 
 ---
