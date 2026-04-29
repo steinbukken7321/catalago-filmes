@@ -175,6 +175,21 @@ function marcarVisto(sId, nome, cat) {
 }
 
 /**
+ * Faz a rolagem suave e centraliza a categoria na tela.
+ */
+function rolarParaCentro(evento, id) {
+    evento.preventDefault(); // Impede o navegador de pular para o topo automaticamente
+    const elemento = document.getElementById(id);
+    
+    if (elemento) {
+        elemento.scrollIntoView({
+            behavior: 'smooth', // Rolagem suave
+            block: 'center'    // A MÁGICA ESTÁ AQUI: centraliza verticalmente
+        });
+    }
+}
+
+/**
  * A função principal: desenha todo o catálogo, menus e botões na tela.
  */
 function renderizarTudo() {
@@ -185,7 +200,7 @@ function renderizarTudo() {
     // 1. Renderiza os botões de atalho no topo
     let htmlMenu = '<div class="cat-row">';
     cats.forEach(cat => {
-        htmlMenu += `<a href="#${cat}" class="cat-btn" style="background:${coresMapping[cat]}">${cat.toUpperCase()}</a>`;
+        htmlMenu += `<a href="#${cat}" onclick="rolarParaCentro(event, '${cat}')" class="cat-btn" style="background:${coresMapping[cat]}">${cat.toUpperCase()}</a>`;
         // Quebra a linha após o botão "Ficção" para o menu não ficar longo demais
         if(cat === "Ficção") htmlMenu += '</div><div class="cat-row">';
     });
