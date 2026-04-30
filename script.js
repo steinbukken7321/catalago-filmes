@@ -189,6 +189,14 @@ function rolarParaCentro(evento, id) {
     }
 }
 
+function voltarAoTopo(evento) {
+    evento.preventDefault(); // Evita que o '#' apareça na URL
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 /**
  * A função principal: desenha todo o catálogo, menus e botões na tela.
  */

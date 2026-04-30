@@ -47,7 +47,7 @@ html_base = f'''
 
     <button class="btn-side btn-memo" onclick="abrirModal('modal-memo')">MEMÓRIAS 🧡</button>
     <button class="btn-side btn-log" onclick="abrirModal('modal-log')">LOG 📋</button>
-    <a href="#topo" class="btn-topo">↑</a>
+    <a href="#" class="btn-topo" onclick="voltarAoTopo(event)">↑</a>
 
     <div class="admin-panel">
         <div class="admin-box">
