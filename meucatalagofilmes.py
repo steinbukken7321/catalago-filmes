@@ -41,7 +41,7 @@ html_base = f'''
 </head>
 <body id="topo" class="dark-mode">
     <div class="banner-fino">
-        <h1>MEU CATÁLOGO DE FILMES</h1>
+        <h1>CATÁLOGO DE FILMES</h1>
         <button onclick="toggleTheme()" id="btn-theme">🌓 MODO</button>
     </div>
 
